@@ -13,6 +13,8 @@ let countdown;
 let end;
 let start;
 
+console.log("TESTING GITHUB")
+
 function startCountdown() {
     countdown = setInterval(() => {
         let start = new Date().getTime();
