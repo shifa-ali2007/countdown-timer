@@ -12,6 +12,7 @@ const userInput = document.getElementById("userInput");
 let countdown;
 let end;
 let start;
+
 function startCountdown() {
     countdown = setInterval(() => {
         let start = new Date().getTime();
@@ -47,7 +48,7 @@ reset.addEventListener("click", () => {
     hourBox.textContent = "00";
     minuteBox.textContent = "00";
 })
-
+  
 setCountdown.onclick = () => {
     modal.style.display = "flex"; 
 }
@@ -57,10 +58,13 @@ ModalClosing.onclick = () => {
 }
 
 window.onclick = function(event) {
+
     if (event.target === modal) {
         modal.style.display = "none";  
     }
 }
+
+
 
 
 
